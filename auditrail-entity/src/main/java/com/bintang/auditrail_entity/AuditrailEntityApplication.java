@@ -8,6 +8,7 @@ public class AuditrailEntityApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(AuditrailEntityApplication.class, args);
+		System.out.println("\nSERVER AUDITRAIL IS RUNNING");
 	}
 
 }
