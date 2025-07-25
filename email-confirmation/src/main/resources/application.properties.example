@@ -31,7 +31,7 @@ spring.activemq.packages.trusted=com.bintang.email_confirmation.model,java.util
 app.confirmation.url=http://localhost:8080/api/register/confirm
 
 # link untuk membuat app password di gmail
-# https://myaccount.google.com/apppasswords?pli=1&rapt=AEjHL4O-7QzyyakOYLLD2UyX50uUpsi-wuK8Y8LQC16LxAhkbuncLuGbsZs2142MVCb92RMbz0Vxo9h6S1qEITNRhSG6pnfHBZW6WMyNYHP1DX--xjhsLIc
+# https://myaccount.google.com/apppasswords?pli=1&rapt=AEjHL4O-7QzyyakOYLLD2UyX50uUpsiaasodasodjsaodjasodij
 
 link download activeMQ
 https://activemq.apache.org/components/classic/download/
