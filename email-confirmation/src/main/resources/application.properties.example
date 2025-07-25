@@ -1,15 +1,42 @@
-spring:
-  application:
-    name: registry-service
+spring.application.name=email-confirmation
 
-server:
-  port: 8761
+server.port = 8080
+server.servlet.context-path=/api
 
-eureka:
-  instance:
-    hostname: localhost
-  client:
-    register-with-eureka: false
-    fetch-registry: false
-    service-url:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+# DB Connection
+spring.datasource.url=jdbc:mysql://localhost:3306/emailconfirmation
+spring.jpa.database-platform=org.hibernate.dialect.MySQLDialect
+spring.datasource.username= root
+spring.datasource.password= bintangmada
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+
+# JAVA MESSAGE SERVICE
+spring.mail.host=smtp.gmail.com
+spring.mail.port=587
+spring.mail.username=your_email
+spring.mail.password=aaaa bbbb cccc dddd
+spring.mail.properties.mail.smtp.auth=true
+spring.mail.properties.mail.smtp.starttls.enable=true
+
+
+spring.activemq.broker-url=tcp://localhost:61616
+spring.activemq.user=admin
+spring.activemq.password=admin
+
+spring.artemis.embedded.enabled=false
+spring.activemq.packages.trust-all=false
+spring.activemq.packages.trusted=com.bintang.email_confirmation.model,java.util
+
+app.confirmation.url=http://localhost:8080/api/register/confirm
+
+# link untuk membuat app password di gmail
+# https://myaccount.google.com/apppasswords?pli=1&rapt=AEjHL4O-7QzyyakOYLLD2UyX50uUpsi-wuK8Y8LQC16LxAhkbuncLuGbsZs2142MVCb92RMbz0Vxo9h6S1qEITNRhSG6pnfHBZW6WMyNYHP1DX--xjhsLIc
+
+link download activeMQ
+https://activemq.apache.org/components/classic/download/
+
+menjalankan activeMQ
+cd apache-activemq-6.1.7 ./bin/activemq start
+
+

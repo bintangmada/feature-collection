@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Email Konfirmasi</title>
+</head>
+<body>
+    <h2>Halo, <span th:text="${name}"></span></h2>
+    <p>Terima kasih telah mendaftar. Silahkan klik tombol di bawah ini untuk konfirmasi email anda</p>
+    <p>
+        <a th:href="${confirmationUrl}" style="background-color: #4CAF50; color: white; padding: 10px 20px; text-decoration: none;">
+            Konfirmasi Email
+        </a>
+    </p>
+    <p>
+        Link ini akan kadaluarsa dalam 15 menit.
+    </p>
+</body>
+</html>
